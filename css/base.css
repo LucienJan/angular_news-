@@ -1,8 +1,8 @@
-	.has_header {
-		margin-top: 53px;
-	}
+	/*.has_header {
+		margin-top: 29px;
+	}*/
 	
-	.weui-wheader {
+	.weui-myheader {
 		bottom: inherit;
 		top: 0;
 		height: 53px;
@@ -10,33 +10,11 @@
 		text-align: center;
 	}
 	
-	.weui-wheader p {
+	.weui-myheader p {
 		width: 100%;
 	}
 	
-	.swiper-container {
-		width: 100%;
-		height: 100%;
-	}
 	
-	.swiper-slide {
-		text-align: center;
-		font-size: 18px;
-		background: #fff;
-		/* Center slide text vertically */
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-	}
 	
 	.swiper-img {
 		width: 100%;
@@ -45,3 +23,37 @@
 	.weui-tabbar {
 		position: fixed;
 	}
+	
+	/*====内容与最底部距离====*/
+	.weui-panel__ft{margin-bottom: 53px;}
+	
+	/*=====搜索框=====*/
+	/*.weui-search-bar{
+		position:fixed;
+	}*/
+	
+	/*===========轮播图组件============*/
+	.swiper-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
