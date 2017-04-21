@@ -86,7 +86,7 @@
 		console.log($location);
 		console.log($location.search);
 		console.log($state.params);
-		$http:({
+		$http({
 			url:"js/detail.json",
 			method:"GET",
 			params:{
@@ -94,7 +94,13 @@
 			}
 		}).then(function(data){
 			console.log(data);
-			$scope.newdata = data.data.news_list[0];
+			switch($state.params.id){
+				case 'iverson': $scope.newData = data.data.news_list[0]; break;
+				case 'kobe':    $scope.newData = data.data.news_list[1]; break;
+				case 'carter':  $scope.newData = data.data.news_list[2]; break;
+				case 'mcgrady': $scope.newData = data.data.news_list[3]; break;
+			}
+			//$scope.newData = data.data.news_list[0];
 		})
 	}])
 })()
